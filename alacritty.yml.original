@@ -19,8 +19,8 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   #dimensions:
-  #  columns: 80
-  #  lines: 30
+  #  columns: 0
+  #  lines: 0
 
   # Window position (changes require restart)
   #
@@ -81,19 +81,19 @@ scrolling:
 
 font:
   normal:
-    family: "Cascadia Code"
+    family: "Cascadia Code PL"
     style: Regular
 
   bold:
-    family: "Cascadia Code"
+    family: "Cascadia Code PL"
     style: Bold
 
   italic:
-    family: "Cascadia Code"
+    family: "Cascadia Code PL"
     style: Italic
 
   bold_italic:
-    family: "Cascadia Code"
+    family: "Cascadia Code PL"
     style: "Bold Italic"
 
   # Font size
@@ -113,16 +113,17 @@ font:
   #  y: 0
 
   # Better font rendering for mac
-  # use_thin_strokes: true
+  use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+# Colors (Dracula PRO - Blade)
 colors:
   # Default colors
   primary:
-    background: '0x1e2127'
-    foreground: '0xabb2bf'
+    background: "0x212c2a"
+    foreground: "0xf8f8f2"
 
     # Bright and dim foreground colors
     #
@@ -130,51 +131,46 @@ colors:
     # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
     # is `false`, the normal foreground color will be used.
     #dim_foreground: '0x9a9a9a'
-    bright_foreground: '0xe6efff'
+    #bright_foreground: '0xffffff'
 
   # Cursor colors
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
+  cursor:
+    text: "0x415854"
+    cursor: "0xf8f8f2"
+
+  # Selection colors
+  #
+  # Colors which should be used to draw the selection area. If selection
+  # background is unset, selection color will be the inverse of the cell colors.
+  # If only text is unset the cell text color will remain the same.
+  selection:
+    text: "0xf8f8f2"
+    background: "0x415854"
 
   # Normal colors
   normal:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0x828791'
+    black: "0x212c2a"
+    red: "0xff9580"
+    green: "0x8aff80"
+    yellow: "0xffff80"
+    blue: "0x9580ff"
+    magenta: "0xff80bf"
+    cyan: "0x80ffea"
+    white: "0xf8f8f2"
 
   # Bright colors
   bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xe6efff'
-
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  dim:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0x828791'
+    black: "0x212c2a"
+    red: "0xffaa99"
+    green: "0xa2ff99"
+    yellow: "0xffff99"
+    blue: "0xaa99ff"
+    magenta: "0xff99cc"
+    cyan: "0x99ffee"
+    white: "0xffffff"
 
 cursor:
   # Cursor style

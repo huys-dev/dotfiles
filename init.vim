@@ -14,7 +14,7 @@ set number
 " This is useful because you can tell, at a glance, what count is needed to
 " jump up or down to a particular line, by {count}k to go up or {count}j to go
 " down.
-set relativenumber
+" set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
@@ -101,3 +101,9 @@ set hlsearch
 " 开启新行时使用智能自动缩进
 set smartindent 
 
+" 自动居中
+nnoremap j jzz
+nnoremap k kzz
+
+" 搜索完成后按<esc>自动取消高亮
+nnoremap <esc> :nohl<cr>
