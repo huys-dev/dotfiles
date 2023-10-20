@@ -1,5 +1,7 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
-
+import:
+# - ~/.config/alacritty/themes/themes/solarized_dark.yaml
+ - ~/.config/alacritty/themes/themes/darcula.yaml
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -36,7 +38,7 @@ window:
   # by DPI and the specified value is always added at both opposing sides.
   padding:
     x: 6
-    y: 6
+    y: 20
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -50,7 +52,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: full
+  decorations: buttonless
 
   # Startup Mode (changes require restart)
   #
@@ -177,7 +179,10 @@ shell:
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-#working_directory: None
+#working_directory: ~/workspace
+
+selection:
+  save_to_clipboard: true
 
 key_bindings:
   - { key: A, mods: Alt, chars: "\x1ba" }
