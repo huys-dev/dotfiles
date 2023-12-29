@@ -83,19 +83,19 @@ scrolling:
 
 font:
   normal:
-    family: "Cascadia Code"
+    family: "CaskaydiaCove NFM"
     style: Regular
 
   bold:
-    family: "Cascadia Code"
+    family: "CaskaydiaCove NFM"
     style: Bold
 
   italic:
-    family: "Cascadia Code"
+    family: "CaskaydiaCove NFM"
     style: Italic
 
   bold_italic:
-    family: "Cascadia Code"
+    family: "CaskaydiaCove NFM"
     style: "Bold Italic"
 
   # Font size

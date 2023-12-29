@@ -1,0 +1,28 @@
+import = ["/Users/huys/.config/alacritty/themes/themes/darcula.toml"]
+
+[shell]
+program = "/bin/zsh"
+args = ["--login"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 6, y = 10}
+decorations = "full"
+startup_mode = "Windowed"
+opacity = 1.0
+
+[font]
+normal = { family = "CaskaydiaCove NFM", style = "Regular" }
+bold = { family = "CaskaydiaCove NFM", style = "Bold" }
+italic = { family = "CaskaydiaCove NFM", style = "Italic" }
+bold_italic = { family = "CaskaydiaCove NFM", style = "Bold Italic" }
+size = 17
+offset = { x = 0, y = 1 }
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { blinking =  "On"}
